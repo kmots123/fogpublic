@@ -75,11 +75,11 @@ Param (
     [int]$CertValidityDays = 1095,
     [switch]$SkipNetworkProfileCheck,
     $CreateSelfSignedCert = $true,
-    [switch]$ForceNewSSLCert = $true,
+    [switch]$ForceNewSSLCert,
     [switch]$GlobalHttpFirewallAccess,
-    [switch]$DisableBasicAuth = $true,
-    [switch]$EnableCredSSP = $true,
-    [string]$Username = "ansible",
+    [switch]$DisableBasicAuth = $false,
+    [switch]$EnableCredSSP,
+    [string]$Username,
     [string]$Password
 )
 
